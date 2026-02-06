@@ -1,0 +1,17 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "start:movie": "node index.js --queue=movie",
+    "start:image": "node index.js --queue=image",
+    "dev:movie": "node --watch index.js --queue=movie",
+    "dev:image": "node --watch index.js --queue=image"
+  },
+  "dependencies": {
+    "bullmq": "^5.34.0",
+    "ioredis": "^5.4.1"
+  }
+}

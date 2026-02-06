@@ -1,0 +1,14 @@
+{
+  "name": "thin-api",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/worker"
+  ],
+  "scripts": {
+    "api": "npm run start -w api",
+    "worker": "npm run start -w worker",
+    "dev:api": "npm run dev -w api",
+    "dev:worker": "npm run dev -w worker"
+  }
+}
